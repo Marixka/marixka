@@ -8,12 +8,13 @@ module.exports = function() {
 		
   },
 
-    //ожидание и клик на кнопку
-  clickL: function (locator) {
-	 I.waitForVisible(locator); 
-     I.click(locator);
+    async clickL(locator) {      
 	
-  }
+	 I.waitForElement(locator,5); 
+     I.click(locator);
+        
+    } 
+ 
 
   });
 }

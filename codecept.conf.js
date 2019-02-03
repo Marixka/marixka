@@ -5,7 +5,9 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'https://www.stoloto.ru/',
-	  show: true
+	  show: true,
+	  restart: false,
+	  windowSize : '1000x1000',
     }
   },
   include: {
