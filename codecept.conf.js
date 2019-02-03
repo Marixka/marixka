@@ -9,7 +9,7 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
 	authPage: './pages/authPage.js'
   },
   bootstrap: null,

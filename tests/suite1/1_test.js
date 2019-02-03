@@ -1,7 +1,14 @@
+
+
 Feature('one', { });
 
+BeforeSuite( async (I, authPage) => {
+      await authPage.auth();
+    });
+
 Scenario('Authorization', async (I) => {
-	BeforeSuite(async (I, authPage) => {
-    await authPage.auth();
-});
+				
+    I.await(5);
+   // I.clickL("//span[contains(@class, 'iconic iconic-user')");
+    
 });

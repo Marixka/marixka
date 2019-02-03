@@ -3,9 +3,19 @@
 
 module.exports = function() {
   return actor({
+	  
+	fields: {
+		
+  },
 
-    // Define custom steps here, use 'this' to access default methods of I.
-    // It is recommended to place a general 'login' function here.
+    //ожидание и клик на кнопку
+  clickL: function (locator) {
+	 I.waitForVisible(locator); 
+     I.click(locator);
+	
+  }
 
   });
 }
+
+

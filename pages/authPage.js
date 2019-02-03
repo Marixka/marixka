@@ -6,7 +6,7 @@ module.exports = {
         I = require('../steps_file.js')();
     },
 	
-    url: '/',
+    url: 'https://www.stoloto.ru',
     login: 'marixka@mail.ru',
     pass: '1265344',
     
@@ -27,6 +27,6 @@ module.exports = {
 		I.appendField(this.locators.loginF, this.login );
 		I.appendField(this.locators.passF, this.pass);
 		I.click(this.locators.Inp2);
-
+        
     }
 };
