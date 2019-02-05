@@ -2,16 +2,16 @@
 // in this file you can append custom step methods to 'I' object
 
 module.exports = function() {
-  return actor({
+    return actor({
 	  
 	fields: {
 		
   },
 
-    async clickL(locator) {      
+    clickL(locator) {      
 	
-	 I.waitForElement(locator,5); 
-     I.click(locator);
+		this.waitForElement(locator,5); 
+		this.click(locator);
         
     } 
  

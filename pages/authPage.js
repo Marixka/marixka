@@ -6,7 +6,7 @@ module.exports = {
         I = require('../steps_file.js')();
     },
 	
-    url: 'https://www.stoloto.ru',
+    url: '/',
     login: 'marixka@mail.ru',
     pass: '1265344',
     
