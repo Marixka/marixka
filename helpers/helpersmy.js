@@ -5,10 +5,10 @@ class helpersmy extends codecept_helper {
    
     somefunc() {
     }
-	
-    random(min, max) {
-		return Math.random() * (max - min) + min;
-    }
-}
+	async random(min, max) {
+        return Math.round(Math.random() * (max-min) + min);
 
+    }
+
+}
 module.exports = helpersmy;

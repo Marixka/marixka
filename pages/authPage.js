@@ -5,7 +5,6 @@ module.exports = {
     _init() {
         I = require('../steps_file.js')();
     },
-	
     url: '/',
     login: 'marixka@mail.ru',
     pass: '1265344',
@@ -18,9 +17,8 @@ module.exports = {
 		Inp2: "//button[contains(text(), 'Войти')]"	
     },
 	
-    async auth() {      
-	
-		I.amOnPage(this.url); 
+    async auth() {       //авторизация
+		I.amOnPage(this.url);
 		I.waitForVisible(this.locators.Inp1); 
 		I.click(this.locators.Inp1);
 		I.waitForVisible(this.locators.loginF);
