@@ -8,10 +8,9 @@ module.exports = {
 
     locators: {
         URLone: '/private/data?int=lkmain',
-        first_name:'#first_name',
-        birth_date_day:'#birth_date_day',
-        birth_date_month:'#birth_date_month',
-        save: 'Сохранить',
+        firstName:'#first_name',
+        save: '.type_submit .pretty_button',
+        fistNameold:'#first_name[value]',
 
 
     },

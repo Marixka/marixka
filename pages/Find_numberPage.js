@@ -9,10 +9,8 @@ module.exports = {
     locators: {
         URLon: '/ruslotto/archive', //страница архивных тиражей
         quantity_circulation:'.elem', //количество тиражей на странице
-        all_numbers:`.data .numbers_wrapper`, //все невыпавшие числа тиражей
+        allNumbers:`.data .numbers_wrapper`, //все невыпавшие числа тиражей
         more:'.more', // кнопка "показать больше тиражей"
-
-
 
     },
 };

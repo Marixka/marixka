@@ -12,7 +12,7 @@ module.exports = function() {
 		    this.click(locator);
         },
 
-        async find_num(quantity,arr_num) { //заполнение массива уникальными числами
+        async find_num(quantity,arr_num, max, min) { //заполнение массива уникальными числами
             let j=0;
             let k;
             let number;
@@ -20,7 +20,7 @@ module.exports = function() {
             for (let i = 0; i < quantity; i++) {
             //поиск уникального числа
                 while (j==0) {
-                    number = await Math.round(Math.random() * 35 + 1);
+                    number = await Math.round(Math.random() * max + min);
                     k = -1;
                     while (k !== quantity) {
                         k++;
