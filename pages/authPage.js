@@ -14,7 +14,9 @@ module.exports = {
 		passF: '#auth_password',
 		dow: '#layout',
 		Inp1: "//span[contains(text(), 'Войти')]",
-		Inp2: "//button[contains(text(), 'Войти')]"	
+		Inp2: "//button[contains(text(), 'Войти')]",
+
+
     },
 	
     async auth() {       //авторизация

@@ -4,11 +4,11 @@ BeforeSuite( async (I, authPage) => {
     await authPage.auth();
 });
 
-Scenario('Find ticket', async (I) => {
+Scenario('Find ticket', async (I, Find_ticketPage) => {
     let arr_num = [];
     let quantity;
     let number;
-    I.amOnPage('/5x36plus/game');
+    I.amOnPage(Find_ticketPage.locators.URLo);
     quantity = await I.random(5,11);
 
 //заполняем первый билет
@@ -29,7 +29,7 @@ Scenario('Find ticket', async (I) => {
     I.clickL(`.coupon:nth-child(2) .extra_zone .game_number:nth-child(${number})`);
 
 //сохраняем в корзину
-    I.clickL('.switcher .pseudo ins:nth-child(1)');
-    I.clickL('.buttons_switcher_popup .regular');
-    I.clickL('.regular .pretty_button');
+    I.clickL(Find_ticketPage.locators.open_menu);
+    I.clickL(Find_ticketPage.locators.basket_selection);
+    I.clickL(Find_ticketPage.locators.basket_save);
 });

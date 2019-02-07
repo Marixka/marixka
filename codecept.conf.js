@@ -23,7 +23,11 @@ exports.config = {
   },
   include: {
 		I: './steps_file.js',
-		authPage: './pages/authPage.js'	
+		authPage: './pages/authPage.js',
+      Change_dataPage: './pages/Change_dataPage.js',
+      Find_ticketPage: './pages/Find_ticketPage.js',
+      Find_numberPage: './pages/Find_numberPage.js',
+
   },
   bootstrap: null,
   mocha: {},
